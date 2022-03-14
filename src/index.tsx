@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Context} from '@core-ui/components'
+import { defaultTheme } from '@core-ui/theme';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Context theme={defaultTheme}>
+       <App />
+    </Context>
   </React.StrictMode>,
   document.getElementById('root')
 );
